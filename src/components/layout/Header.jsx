@@ -1,12 +1,23 @@
 // CONCEPT 1
-
+import './Layout.css'
 // TODO: Create horizontal layout at top of page.
-
+function Header () {
+    return (
+        <div id="header">
+            <div id="button-container">
+                <button class="header-button">Home</button>
+                <button class="header-button">Races/Classes</button>
+                <button class="header-button">Price and Fees</button>
+            </div>
+        </div>
+    );
+}
 // TODO: Add three buttons on the right most side.
 
 // TODO: Route the buttons to the appropriate pages.
 
 // TODO: Export.
+export default Header;
 
 // TODO: more to come...
 

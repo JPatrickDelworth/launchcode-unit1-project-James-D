@@ -1,12 +1,13 @@
 import './App.css'
-
+//import AboutPage from './components/pages/about/AboutPage'
+import HomePage from './components/pages/home/HomePage'
 
 function App() {
 
 
   return (
     <div>
-      <h1>My Project</h1>
+      <HomePage />
     </div>
   )
 }

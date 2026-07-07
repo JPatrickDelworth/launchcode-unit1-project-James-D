@@ -1,3 +1,16 @@
+import Header from '../../layout/Header'
+import Footer from '../../layout/Footer'
+
+function Home () {
+
+    return (
+        <div>
+            <Header />
+            <Footer />
+        </div>
+    );
+}
+
 // TODO: Place logo.
 
 // TODO: Create gameplay hook textbox.
@@ -11,5 +24,5 @@
 // TODO: Implement expansion cards.
 
 // TODO: Export.
-
+export default Home
 // TODO: more to come...
