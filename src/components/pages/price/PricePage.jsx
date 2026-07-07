@@ -1,5 +1,6 @@
 import Header from '../../layout/Header'
 import Footer from '../../layout/Footer'
+import './Price.css'
 // TODO: Place logo.
 
 // TODO: Create free trial vs paid sub table.
@@ -13,8 +14,6 @@ import Footer from '../../layout/Footer'
 // TODO: Add region buttons.
 
 // TODO: Add server cards.
-
-// TODO: Export.
 
 // TODO: more to come...
 
