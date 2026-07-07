@@ -1,6 +1,13 @@
 // CONCEPT 1
 import './Layout.css'
 // TODO: Create horizontal layout at top of page.
+
+// TODO: Add three buttons on the right most side.
+
+// TODO: Route the buttons to the appropriate pages.
+
+// TODO: more to come...
+
 function Header () {
     return (
         <div id="header">
@@ -12,14 +19,9 @@ function Header () {
         </div>
     );
 }
-// TODO: Add three buttons on the right most side.
 
-// TODO: Route the buttons to the appropriate pages.
-
-// TODO: Export.
 export default Header;
 
-// TODO: more to come...
 
 
 /*====================================================================================================================*/

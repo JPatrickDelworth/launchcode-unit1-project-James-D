@@ -1,3 +1,5 @@
+import Header from '../../layout/Header'
+import Footer from '../../layout/Footer'
 // TODO: Place logo.
 
 // TODO: Create free trial vs paid sub table.
@@ -15,3 +17,16 @@
 // TODO: Export.
 
 // TODO: more to come...
+
+function Price () {
+
+
+    return (
+        <div>
+            <Header />
+            <Footer />
+        </div>
+    );
+}
+
+export default Price;

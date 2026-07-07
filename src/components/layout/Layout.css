@@ -1,3 +1,5 @@
+/*TODO: Change flex box to grid?*/
+
 #header {
     display: flex;
     justify-content: right;

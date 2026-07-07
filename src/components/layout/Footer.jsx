@@ -1,6 +1,11 @@
 // CONCEPT 1
-
+import './Layout.css'
 // TODO: Create a horizontal layout at the bottom of the page.
+
+// TODO: Link that button to the "About Me" page.
+
+// TODO: more to come...
+
 function Footer () {
     return (
         <div id="footer">
@@ -11,15 +16,9 @@ function Footer () {
         </div>
     );
 }
-// TODO: Add a button in the center.
 
-// TODO: Link that button to the "About Me" page.
-
-// TODO: Add copyright information next to the button.
-
-// TODO: Export.
 export default Footer;
-// TODO: more to come...
+
 
 
 /*====================================================================================================================*/

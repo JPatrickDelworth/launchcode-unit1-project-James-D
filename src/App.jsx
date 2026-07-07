@@ -1,13 +1,15 @@
 import './App.css'
+//import HomePage from './components/pages/home/HomePage'
+//import CharNClassPage from './components/pages/charNclass/CharNClassPage'
+import PricePage from './components/pages/price/PricePage'
 //import AboutPage from './components/pages/about/AboutPage'
-import HomePage from './components/pages/home/HomePage'
 
 function App() {
 
 
   return (
     <div>
-      <HomePage />
+      <PricePage />
     </div>
   )
 }

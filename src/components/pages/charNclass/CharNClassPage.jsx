@@ -1,3 +1,6 @@
+import Header from '../../layout/Header'
+import Footer from '../../layout/Footer'
+
 // TODO: Place logo.
 
 // TODO: Create layout for playable race icons and info card.
@@ -8,6 +11,18 @@
 
 // TODO: Implement class card overlay on click
 
-// TODO: Export.
-
 // TODO: more to come...
+
+function CharNClass () {
+
+
+    return (
+        <div>
+          <Header/>
+          <Footer/>  
+        </div>
+    )
+}
+
+
+export default CharNClass;
