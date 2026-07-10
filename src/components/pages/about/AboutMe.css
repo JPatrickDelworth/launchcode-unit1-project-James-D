@@ -1,71 +1,205 @@
 /*TODO: Change flex box to grid.*/
-#title {
+body {
+    font-size: 22px;
+}
+
+#about-page {
+    
+    border-color: goldenrod;
+
+}
+
+#about-container{
+    
+    border-color: blueviolet;
+    display: grid;
+    grid-template-rows: .2fr 1fr .2fr .5fr .1fr 1.7fr .5fr .3fr .07fr 2.4fr .5fr 4fr .2fr;
+}
+#about-gap1 {
+    grid-row-start: 1;
+    
+    border-color: aqua;
+}
+
+#about-logo-container {
+    grid-row-start: 2;
+    
+    border-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#about-gap2 {
+    grid-row-start: 3;
+    
+    border-color: aqua;
+}
+
+
+#title-container {
+    grid-row-start: 4;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    font-size: 28px;
+    
+    border-color: brown;
+
+}
+
+#about-gap3 {
+    grid-row-start: 5;
+    
+    border-color: aqua;
+}
+
+#text-container {
+    grid-row-start: 6;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    border: 2px solid;;
 }
 
 #text {
-    text-align: center;
+    font-size: 25px;
 }
 
-.comment-title {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+#about-gap4 {
+    grid-row-start: 7;
+    
+    border-color: aqua;
 }
 
-.form {
+#comment-title-container {
+    grid-row-start: 8;
     display: flex;
+    align-content: center;
+    align-items:end;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 450px;
+    text-align: center;
+    font-size: 28px;
+    border-color: brown;
 }
 
-#about {
-    display: flex;
-    justify-content:center;
-
-}
-
-#about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5%;
-    width: 75%;
-}
-
-#submit {
-    display: flex;
-    width: 235px;
-    align-items: right;
-    align-content:right;
-    justify-content: right;
-    margin: 2px
+#about-gap5 {
+    grid-row-start: 9;
+    
+    border-color: aqua;
 }
 
 #form-container {
+    grid-row-start: 10;
     display:flex;
     justify-content:center;
+    
+    border-color: brown;
+    flex-wrap: nowrap;
+
 }
 
-#comment-section {
-    display:flex;
-    justify-content:center;
-    align-content: center;
-    align-items: center;
-    margin: 5px;
-}
+.form {
 
-#comment-container {
+    width:60%;
     display: flex;
-    width: 40%
+    justify-content: center;
+    flex-direction: column;
+    
+    height: fit-content
 }
 
-#comment {
-    overflow: auto;
+#id-form-container {
+    display: flex;
+    height: 3rem;
 }
 
 #name {
     margin: 2px;
+    width:50%;
+    font-size: 24px;
+
+}
+
+#email {
+    margin: 2px;
+    width: 50%;
+    font-size: 24px;
+}
+
+#form-gap1 {
+    
+    border-color: aqua;
+    height: 1rem;
+}
+
+#message {
+    height: 50%;
+    font-size: 24px;
+}
+
+#form-gap2 {
+    
+    border-color: aqua;
+    height: 1rem;
+}
+
+#submit {
+    display: flex;
+    align-items: right;
+    align-content:right;
+    justify-content: right;
+    margin: 5px;
+    height: 10%;
+}
+
+#submit-button {
+    width: 12%;
+    font-size: 24px;
+}
+
+#about-gap6 {
+    grid-row-start: 11;
+    
+    border-color: aqua;
+}
+
+#comment-container {
+    grid-row-start: 12;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+
+}
+
+#comment-title {
+    font-size: 28px;
+}
+
+#comment {
+    overflow: scroll;
+    
+}
+
+#about-gap7 {
+    grid-row-start: 13;
+    
+    border-color: aqua;
 }

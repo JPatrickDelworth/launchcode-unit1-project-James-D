@@ -5,10 +5,10 @@
     justify-content: right;
     align-items: right;
     align-content: right;
-    border: 1px solid;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 5px;
+    border: 2px solid;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
     padding-left: 5px;
 }
 
@@ -21,7 +21,7 @@
 
 .header-button {
     margin: 2px;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 #footer {
@@ -29,17 +29,17 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    border: 1px solid;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    border: 2px solid;
+    padding-bottom: 25px;
+    padding-top: 25px;
     padding-right: 5px;
     padding-left: 5px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .footer-button {
     margin: 2px;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 #copyright-container {
@@ -48,5 +48,5 @@
     align-content: center;
     align-items: center;
     padding-left: 5px;
-    font-size: 11px;
+    font-size: 16px;
 }

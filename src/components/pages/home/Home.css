@@ -1,0 +1,148 @@
+#home-page {
+    
+    border-color: goldenrod;
+}
+
+
+.home-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem;
+    
+    border-color:blueviolet;
+    height: fit-content;
+
+}
+
+.hook {
+    font-size: 22px;
+}
+
+#home-gap1 {
+    grid-row: 1;
+    height: 2rem;
+    
+    border-color: aqua;
+}
+
+#logo-container {
+    grid-row: 2;
+    border-color: rgb(127, 133, 255);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+}
+
+
+#logo {
+    max-height: 9rem;
+    
+}
+
+#home-gap2 {
+    grid-row-start: 3;
+    height: 2rem;
+    
+    border-color: aqua;
+}
+
+#overview {
+    grid-row: 4;
+    
+    border-color:brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height:fit-content;
+
+}
+
+.text-container {
+    display:flex;
+    
+    border-color: blueviolet;
+    justify-content: center;
+    width: 65%;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+#home-gap3 {
+    grid-row: 5;
+    height: 2rem;
+    
+    border-color: aqua;
+}
+
+#img-hook {
+    grid-row: 6;
+    
+    border-color: chartreuse;
+    height:300px;
+    display: flex;
+    justify-content: center;
+}
+
+#img-standin {
+    border: 2px solid;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plot {
+    grid-row: 7;
+    
+    border-color: crimson;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gallery {
+    grid-row: 8;
+    height: 150px;
+    display: flex;
+    justify-content:center;
+}
+
+#gallery-container {
+    border: 2px solid;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-gap4 {
+    grid-row: 9;
+    
+    border-color: aqua;
+    height: 2rem;
+}
+
+#expansions {
+    grid-row: 10;
+    border: 2px solid;
+    
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-gap5 {
+    grid-row: 11;
+    
+    border-color: aqua;
+    height: 2rem;
+}

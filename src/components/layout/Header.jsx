@@ -1,4 +1,5 @@
 // CONCEPT 1
+
 import './Layout.css'
 // TODO: Create horizontal layout at top of page.
 
@@ -15,6 +16,7 @@ function Header () {
                 <button class="header-button">Home</button>
                 <button class="header-button">Races/Classes</button>
                 <button class="header-button">Price and Fees</button>
+                <button class="header-button">About</button>
             </div>
         </div>
     );

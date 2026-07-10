@@ -16,44 +16,59 @@ import Footer from '../../layout/Footer'
 function About () {
     
     return (
-        <div id="page">
-            <div>
-                <Header />
-            </div>
-            <div id="about">
-                <div id="about-container">
-                    <text id="title">About Me</text>
-                    <br />
-                    <text id="text">About me information...</text>
-            </div>
+        <div id="about-page">
+            <Header />
+            <div id="about-container">
+                <div id="about-gap1" />
+                <div id="about-logo-container">
+                    <img src="../../../../public/logos/FFXIV Logo V3.png" id="logo" alt="Final Fantasy XIV Title Logo" />
                 </div>
-            <br></br>
-            <br></br>
-            <legend class="comment-title">Visitor Reply Submission Form</legend>
-            <div id="form-container">
-                <form class="form">
-                    <div class="form">
-                        <input type="text" id="name" name="name" placeholder="Name" required />
-                        <input type="email" id="email" name="email" placeholder="Email" required />
-                        <br />
-                        <textarea id="message" name="message" rows="5" cols="30" placeholder="Comments..." required></textarea>
-                        <br />
+                <div id="about-gap2" />
+                <div id="title-container">
+                    <div id="title">
+                        About Me
                     </div>
-                    <div id="submit">
-                        <input type="submit" value="Submit" />
+                </div>
+                <div id="about-gap3" />
+                <div id="text-container">
+                    <div id="text-box">
+                        <div id="text">
+                            About me information...
+                        </div>
                     </div>
-                </form>  
-            </div>
-            <br />
-            <br />
-            <div id="comment-section">
+                </div>
+                <div id="about-gap4" />
+                <div id="comment-title-container">
+                    <div id="comment-title">
+                        Visitor Reply Submission Form
+
+                    </div>
+                </div>
+                <div id="about-gap5" />
+                <div id="form-container">
+                    <form class="form">
+                        <div id="id-form-container">
+                            <input type="text" id="name" name="name" placeholder="Name" required />
+                            <input type="email" id="email" name="email" placeholder="Email" required />
+                        </div>
+                        <div id="form-gap1" />
+                        <textarea id="message" name="message" rows="10" cols="30" placeholder="Comments..." required ></textarea>
+                        <div id="form-gap2" />
+                        <div id="submit">
+                            <input id="submit-button" type="submit" value="Submit" />
+                        </div>
+                    </form>  
+                </div>
+                <div id="about-gap6" />
                 <div id="comment-container">
-                    <textarea id="comment" name="comment" rows="15" cols="100"></textarea>
+                    <div id="comment-title">
+                        Visitor Comments
+                    </div>
+                    <textarea id="comment" name="comment" rows="40" cols="300"></textarea>
                 </div>
+                <div id="about-gap7" />
             </div>
-            <div>
-                <Footer />
-            </div>
+            <Footer />
 
         </div>
 
