@@ -1,7 +1,5 @@
-import Header from '../../layout/Header'
 import Footer from '../../layout/Footer'
 import './Price.css'
-// TODO: Place logo.
 
 // TODO: Create free trial vs paid sub table.
 
@@ -22,7 +20,7 @@ function Price () {
 
     return (
         <div id="price-page">
-            <Header id="price-header"/>
+            
             <div id="price-container">
                 <div id="price-gap1"></div>
                 <div id="logo-container">

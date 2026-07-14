@@ -1,8 +1,5 @@
 import './CharNClass.css'
-import Header from '../../layout/Header'
 import Footer from '../../layout/Footer'
-
-// TODO: Place logo.
 
 // TODO: Create layout for playable race icons and info card.
 
@@ -19,7 +16,6 @@ function CharNClass () {
 
     return (
         <div id="char-page">
-            <Header id="char-header"/>
             <div id="char-container">
                 <div id="char-gap1"/>
                 <div id="logo-container">

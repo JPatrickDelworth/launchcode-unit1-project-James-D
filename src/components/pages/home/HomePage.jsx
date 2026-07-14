@@ -1,8 +1,5 @@
-import Header from '../../layout/Header'
 import Footer from '../../layout/Footer'
 import './Home.css'
-
-// TODO: Place logo.
 
 // TODO: Create gameplay hook textbox.
 
@@ -20,7 +17,6 @@ function Home () {
 
     return (
         <div id="home-page">
-            <Header id="home-header" />
             <div class="home-container">
                 <div id="home-gap1" />
                 <div id="logo-container">

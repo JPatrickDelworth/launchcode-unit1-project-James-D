@@ -1,8 +1,5 @@
 import './AboutMe.css'
-import Header from '../../layout/Header'
 import Footer from '../../layout/Footer'
-
-// TODO: Place logo.
 
 // TODO: Populate "About Me" textbox with information.
 
@@ -17,7 +14,7 @@ function About () {
     
     return (
         <div id="about-page">
-            <Header />
+            
             <div id="about-container">
                 <div id="about-gap1" />
                 <div id="about-logo-container">

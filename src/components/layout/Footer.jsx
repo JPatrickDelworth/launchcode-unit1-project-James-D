@@ -1,16 +1,16 @@
 // CONCEPT 1
+import { useNavigate } from 'react-router-dom';
 import './Layout.css'
-// TODO: Create a horizontal layout at the bottom of the page.
-
-// TODO: Link that button to the "About Me" page.
 
 // TODO: more to come...
 
 function Footer () {
+    const navigate = useNavigate();
+
     return (
         <div id="footer">
             <div id="button-container">
-                <button class="footer-button">About</button>
+                <button onClick={() => navigate("/about")} className="header-button">About</button>
             </div>
             <div id="copyright-container">&copy; J Patrick Delworth 2026</div>
         </div>

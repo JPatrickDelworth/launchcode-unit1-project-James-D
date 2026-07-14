@@ -1,22 +1,19 @@
 // CONCEPT 1
-
+import { useNavigate } from 'react-router-dom';
 import './Layout.css'
-// TODO: Create horizontal layout at top of page.
-
-// TODO: Add three buttons on the right most side.
-
-// TODO: Route the buttons to the appropriate pages.
-
 // TODO: more to come...
 
 function Header () {
+    const navigate = useNavigate();
     return (
-        <div id="header">
-            <div id="button-container">
-                <button class="header-button">Home</button>
-                <button class="header-button">Races/Classes</button>
-                <button class="header-button">Price and Fees</button>
-                <button class="header-button">About</button>
+        <div>
+            <div id="header">
+                <div id="button-container">
+                    <button onClick={() => navigate("/")} className="header-button">Home</button>
+                    <button onClick={() => navigate("/char")} className="header-button">Races/Classes</button>
+                    <button onClick={() => navigate("/price")} className="header-button">Price and Fees</button>
+                    
+                </div>
             </div>
         </div>
     );
