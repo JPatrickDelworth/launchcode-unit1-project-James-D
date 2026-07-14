@@ -1,0 +1,69 @@
+.charCard {
+    display: grid;
+    grid-template-columns: 1rem, 1rem;
+    border: 3px solid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+        "race-name . . . "
+        "background . photo photo"
+        "naming-convention . photo photo"
+        "clan1 clan2 photo photo";
+}
+
+#content-container {
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid;
+    width: 60%;
+    height: 100%;
+}
+
+#race-name {
+    width: 30%;
+    border: 3px solid;
+}
+
+.content-orientation {
+    border: 3px solid;
+    text-align: left;
+}
+
+#clan-container {
+    display: flex;
+    justify-content: center;
+    align-content:end;
+    width: 70%;
+    border: 3px solid;
+    
+}
+
+#clan1 {
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+#clan2 {
+  
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+#naming-convention {
+    
+    border: 3px solid;
+}
+
+.photo {
+    grid-column-start: 2;
+    border: 3px solid;
+}
+
+.info {
+    font-size: 20px;
+}

@@ -6,7 +6,7 @@
 }
 
 p {
-    font-size: 22px;
+    font-size: 12px;
 }
 
 #char-container {
@@ -72,12 +72,17 @@ p {
     grid-column-start: 2;
     display: flex;
     border: 2px solid;
-    
+    flex-direction: column;
     display: flex;
     align-content:center;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.race-button {
+    height: 8%;
+    margin: 5%;
 }
 
 #char-col2 {
@@ -147,9 +152,15 @@ p {
     grid-column-start: 2;
     border: 2px solid;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.job-button {
+    height: 100px;
+    width: 100px;
 }
 
 .char-col5 {

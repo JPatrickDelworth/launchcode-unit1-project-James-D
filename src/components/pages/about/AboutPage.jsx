@@ -1,5 +1,5 @@
 import Footer from '../../layout/Footer'
-import logo from '../../../../public/logos/FFXIV Logo V3.png'
+import logo from '../../../assets/logos/FFXIV Logo V3.png'
 import './AboutMe.css'
 
 // TODO: Populate "About Me" textbox with information.

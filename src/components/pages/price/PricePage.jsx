@@ -1,5 +1,5 @@
 import Footer from '../../layout/Footer'
-import logo from '../../../../public/logos/FFXIV Logo V3.png'
+import logo from '../../../assets/logos/FFXIV Logo V3.png'
 import './Price.css'
 
 // TODO: Create free trial vs paid sub table.

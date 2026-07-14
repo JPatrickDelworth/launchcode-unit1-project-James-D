@@ -7,7 +7,7 @@ export const playableRaces = [
         name: "Hyur",
         sub1: "Midlanders",
         sub2: "Highlanders",
-        overview: "",
+        overview: "Hyurs are humans.",
         namingConvention: `Midlanders first names are based on Anglo Saxon, Celtic, and Briton names from medieval Europe. 
                            Last names are based on profession (ex: Eddard Baker, Joyse Brown, Rauffe Shepard). Highlander
                            first names are based on Germanic or Norman roots. Last names are are usually harsh sounding
@@ -18,7 +18,7 @@ export const playableRaces = [
         name: "Elezen",
         sub1: "Wildwood",
         sub2: "Duskwight",
-        overview: "",
+        overview: "Elezen are elves.",
         namingConvention: `Both Wildwood and Duskwight Elezen's first and last names are based on French names 
                            (ex: Arthurioux Beltardois, Cliaux Derinloire).`
     },
@@ -26,7 +26,7 @@ export const playableRaces = [
         name: "Roegadyn",
         sub1: "Sea Wolves",
         sub2: "Hellsguard",
-        overview: "",
+        overview: "Roegadyn are sexy orcs.",
         namingConvention: `Roegadyn first names are usually self chosen, usually being a descriptor followed by a noun. Sea Wolves
                            use the ancestral Roegadyn language for their names (inspired by Germanic languages). They also use last 
                            names which are taken from their father's first name and suffix meaning "son of" or "daughter of" ("syn" and 
@@ -39,7 +39,7 @@ export const playableRaces = [
         name: "Lalafell",
         sub1: "Plainsfolk",
         sub2: "Dunesfolk",
-        overview: "",
+        overview: "Lalafell are potatoes.",
         namingConvention: `Lalafell names have heavy use of rhyme, rhythm, repetition, and alliteration. There are four specific phoneme
                            patterns used. They do not use family last names and thus both first and last names are unique to the 
                            individual. Plainsfolk males use the phoneme pattern AB-CB to make names like Zorido Manarido or Alka Zolka. 
@@ -53,7 +53,7 @@ export const playableRaces = [
         name: "Miqo'te",
         sub1: "Seekers of the Sun",
         sub2: "Keepers of the Moon",
-        overview: "",
+        overview: "Miqo'te are your cat girl fantasy made flesh.",
         namingConvention: `Seekers of the Sun are a patriarchal society and their names match this. Every Seeker first name is preceded
                            by their a letter representing their tribe followed by an apostrophe and then their first name such as 
                            Y'shtola or B'alih. Close friends and companions will drop the tribe letter (Shtola or Alih). Male Seeker 
@@ -74,7 +74,7 @@ export const playableRaces = [
         name: "Au Ra",
         sub1: "Raen",
         sub2: "Xaela",
-        overview: "",
+        overview: "Au Ra are dragon people whose gender proportion difference would seem to make child bearing impossible.",
         namingConvention: `Au Ra naming conventions are not unique to them. They often take names from Hyur
                            living in the same area signifying a similar back culture. Hailing from the east, Raen names are based on 
                            Japanese names while Xaela names are based on Mongolian. Au Ra that grew up in other regions tend to have 
@@ -85,7 +85,7 @@ export const playableRaces = [
         name: "Viera",
         sub1: "Rava",
         sub2: "Veena",
-        overview: "",
+        overview: "Someone call Hugh Heffner?",
         namingConvention: `Viera names are not differentiated by clan. They usually have multiple names throughout their lives. The 
                            names their parents give them is usually gender and sex neutral since the sex of young viera is not typically 
                            obvious until they reach adulthood at 13. At this point they usually choose their own names. When residing 
@@ -109,7 +109,7 @@ export const playableRaces = [
         name: "Hrothgar",
         sub1: "Helions",
         sub2: "The Lost",
-        overview: "",
+        overview: "Furries unite!",
         namingConvention: `Hrothgar first names are based on Slavic names. Helion lastnames, are based on the queen they served.
                            If their queen is alive at the time of their birth or still living as acting queen, Helion last names begin
                            with an 'A' which means 'in service of'. The Lost do not serve a matriarch. Instead, their last names all 
