@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes, Route, } from 'react-router-dom'
-
+import { Routes, Route, } from 'react-router-dom'
 import './App.css'
 import HomePage from './components/pages/home/HomePage'
 import CharNClassPage from './components/pages/charNclass/CharNClassPage'
@@ -11,10 +10,10 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <div>
 
         <Header />
-        
+
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="char" element={<CharNClassPage />} />
@@ -22,8 +21,7 @@ function App() {
         <Route path="about" element={<AboutPage />} /> 
       </Routes>
 
-
-    </BrowserRouter>
+    </div>
         
 
   

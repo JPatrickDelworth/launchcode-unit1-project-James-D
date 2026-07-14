@@ -1,4 +1,5 @@
 import Footer from '../../layout/Footer'
+import logo from '../../../../public/logos/FFXIV Logo V3.png'
 import './Home.css'
 
 // TODO: Create gameplay hook textbox.
@@ -21,7 +22,7 @@ function Home () {
                 <div id="home-gap1" />
                 <div id="logo-container">
 
-                        <img src="../../../../public/logos/FFXIV Logo V3.png" id="logo" alt="Final Fantasy XIV Title Logo" />
+                        <img src={logo} id="logo" alt="Final Fantasy XIV Title Logo" />
 
                 </div>
                 <div id="home-gap2" />

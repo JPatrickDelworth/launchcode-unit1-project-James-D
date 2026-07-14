@@ -1,4 +1,5 @@
 import Footer from '../../layout/Footer'
+import logo from '../../../../public/logos/FFXIV Logo V3.png'
 import './Price.css'
 
 // TODO: Create free trial vs paid sub table.
@@ -24,7 +25,7 @@ function Price () {
             <div id="price-container">
                 <div id="price-gap1"></div>
                 <div id="logo-container">
-                    <img src="../../../../public/logos/FFXIV Logo V3.png" id="logo" alt="Final Fantasy XIV Title Logo"/>
+                    <img src={logo} id="logo" alt="Final Fantasy XIV Title Logo"/>
                 </div>
                 <div id="price-gap2"></div>
                 <div id="vs-container">

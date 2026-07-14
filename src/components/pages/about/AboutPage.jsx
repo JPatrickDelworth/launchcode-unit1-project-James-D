@@ -1,5 +1,6 @@
-import './AboutMe.css'
 import Footer from '../../layout/Footer'
+import logo from '../../../../public/logos/FFXIV Logo V3.png'
+import './AboutMe.css'
 
 // TODO: Populate "About Me" textbox with information.
 
@@ -18,7 +19,7 @@ function About () {
             <div id="about-container">
                 <div id="about-gap1" />
                 <div id="about-logo-container">
-                    <img src="../../../../public/logos/FFXIV Logo V3.png" id="logo" alt="Final Fantasy XIV Title Logo" />
+                    <img src={logo} id="logo" alt="Final Fantasy XIV Title Logo" />
                 </div>
                 <div id="about-gap2" />
                 <div id="title-container">

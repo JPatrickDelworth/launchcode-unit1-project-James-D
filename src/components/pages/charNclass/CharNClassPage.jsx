@@ -1,5 +1,6 @@
-import './CharNClass.css'
 import Footer from '../../layout/Footer'
+import logo from '../../../../public/logos/FFXIV Logo V3.png'
+import './CharNClass.css'
 
 // TODO: Create layout for playable race icons and info card.
 
@@ -19,7 +20,7 @@ function CharNClass () {
             <div id="char-container">
                 <div id="char-gap1"/>
                 <div id="logo-container">
-                    <img src="../../../../public/logos/FFXIV Logo V3.png" id="logo" alt="Final Fantasy XIV Logo" />
+                    <img src={logo} id="logo" alt="Final Fantasy XIV Logo" />
                 </div>
                 <div id="char-gap2"/>
                 <div id="char">
