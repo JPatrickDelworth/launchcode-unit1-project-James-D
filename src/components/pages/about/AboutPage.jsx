@@ -43,7 +43,7 @@ function About () {
                 </div>
                 <div id="about-gap5" />
                 <div id="form-container">
-                    <form class="form">
+                    <form className="form">
                         <div id="id-form-container">
                             <input type="text" id="name" name="name" placeholder="Name" required />
                             <input type="email" id="email" name="email" placeholder="Email" required />

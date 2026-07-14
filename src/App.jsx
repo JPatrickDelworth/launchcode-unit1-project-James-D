@@ -13,17 +13,8 @@ function App() {
   return (
     <BrowserRouter>
 
-
-
-      <div>
-
-
-
         <Header />
-
-
-
-      </div>
+        
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="char" element={<CharNClassPage />} />
