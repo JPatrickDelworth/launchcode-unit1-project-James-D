@@ -1,11 +1,8 @@
-// TODO: Import global card.
+import './JobCard.css'
 
-// TODO: Customize card for class layout
-
-// TODO: Populate with data
-
-// TODO: Export
-
+//TODO: Add Animation
+//TODO: ADD Card "sliding mechanics" (like a deck with one card on top and the visitor can "flip through them") OPTIONAL
+//TODO: As an alternative to above, add Arrow buttons on witrher side of a Job card so visitors can scroill without clicking off the card if they don't want to.
 // TODO: more to come...
 
 function JobCard (props) {
@@ -16,30 +13,16 @@ function JobCard (props) {
 
             </div>
             <div id="job-info">
-
-
-
-
-
-
-
-
-
                 <h2 id="job-title">{props.job.name}</h2>
-
-
-
-
-
-
-
-
-
-
-                <h3>Base: {props.job.base}</h3>
-                <h3>Weapon: {props.job.weapon}</h3>
-                <h3>Position: {props.job.position}</h3>
-                <h3>Expansion: {props.job.expansion}</h3>
+                <div id="job-stats">
+                    <p className="job-points">Base: {props.job.base}</p>
+                    <p className="job-points">Weapon: {props.job.weapon}</p>
+                    <p className="job-points">Position: {props.job.position}</p>
+                    <p className="job-points">Expansion: {props.job.expansion}</p>
+                </div>
+                <div id="description-container">
+                    <p id="job-description">{props.job.description}</p>
+                </div>
             </div>
         </div>
     )

@@ -20,6 +20,7 @@ import JobCard from './JobCard'
 function CharNClass () {
     const [selectedRace, setSelectedRace] = useState(playableRaces[0]);
     const [selectedJob, setSelectedJob] = useState(jobs.mainJobs[0]);
+    const [showJobCard, setShowJobCard] = useState(false);
     const combatJobs = [...jobs.mainJobs, ...jobs.limitedJobs];
 
     return (
@@ -57,13 +58,25 @@ function CharNClass () {
             
                     <div className="char-col4"><p></p></div>
                     <div id="classes">
-                        <JobCard job={selectedJob} />
+                        {
+                            showJobCard && (
+                                <div id="popup-overlay" onClick={() => setShowJobCard(false)}>
+                                    <div id="popup-card" onClick={(event) => event.stopPropagation()}>
+                                        <JobCard job={selectedJob} />
+                                    </div>
+                                </div>
+                            )
+                        }
+                        <h2 id="job-section-title">Jobs</h2>
                         <div className="rows">
                             {combatJobs.slice(0, 10).map((job) => (
                                 <button
                                         key={job.name}
                                         className='job-button'
-                                        onClick={() => setSelectedJob(job)}
+                                        onClick={() => {
+                                            setSelectedJob(job);
+                                            setShowJobCard(true);
+                                        }}
                                     >
                                         <img
                                             src={job.icon}
@@ -77,7 +90,10 @@ function CharNClass () {
                                 <button
                                         key={job.name}
                                         className='job-button'
-                                        onClick={() => setSelectedJob(job)}
+                                        onClick={() => {
+                                            setSelectedJob(job);
+                                            setShowJobCard(true);
+                                        }}
                                     >
                                         <img
                                             src={job.icon}
@@ -91,7 +107,10 @@ function CharNClass () {
                                 <button
                                         key={job.name}
                                         className='job-button'
-                                        onClick={() => setSelectedJob(job)}
+                                        onClick={() => {
+                                            setSelectedJob(job);
+                                            setShowJobCard(true);
+                                        }}
                                     >
                                         <img
                                             src={job.icon}

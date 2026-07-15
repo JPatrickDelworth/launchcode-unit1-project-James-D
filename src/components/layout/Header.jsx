@@ -10,8 +10,8 @@ function Header () {
             <div id="header">
                 <div id="button-container">
                     <button onClick={() => navigate("/")} className="header-button">Home</button>
-                    <button onClick={() => navigate("/char")} className="header-button">Races/Classes</button>
-                    <button onClick={() => navigate("/price")} className="header-button">Price and Fees</button>
+                    <button onClick={() => navigate("/char")} className="header-button">Races & Jobs</button>
+                    <button onClick={() => navigate("/price")} className="header-button">Price & Fees</button>
                     
                 </div>
             </div>

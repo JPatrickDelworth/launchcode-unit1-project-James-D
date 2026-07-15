@@ -16,8 +16,9 @@
     flex: 1;
     flex-direction: column;
     align-items: center;
-    
+    font-family: "Noto Sans";
     padding: 2%;
+    line-height: 26px;
     
 }
 

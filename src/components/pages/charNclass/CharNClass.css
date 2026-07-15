@@ -115,7 +115,8 @@ p {
     border-radius: 12px;
 
     display: flex;
-
+    white-space: pre-line;
+    text-align: justify;
 
     align-items: stretch;
     justify-content: stretch;
@@ -174,6 +175,12 @@ p {
     align-items: center;
     align-content: center;
     
+    
+}
+
+#job-section-title {
+    font-family: "Noto Serif";
+    line-height: 20px;
 }
 
 .rows {
@@ -188,6 +195,32 @@ p {
     height: 75px;
     width: 85px;
     border-radius: 12px;    
+}
+
+#popup-overlay {
+    position:fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+#popup-card {
+    width: 70%;
+    max-width: 900px;
+    background-color: white;
+    border: 2px solid;
+    padding: 1.5%;
+    border-radius: 12px;
+    margin: 5%;
+    margin-bottom: 20%;
+    line-height: 26px;
+    height: 43%;
+    max-height: 700px;
+
+    
 }
 
 .char-col5 {
