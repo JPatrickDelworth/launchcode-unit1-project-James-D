@@ -5,7 +5,7 @@
     justify-content: right;
     align-items: right;
     align-content: right;
-    border: 2px solid;
+    border: 1px solid;
     padding-bottom: 25px;
     padding-top: 25px;
     padding-right: 25px;
@@ -22,6 +22,7 @@
 .header-button {
     margin: 2px;
     font-size: 16px;
+    border-radius: 7px;
 }
 
 #footer {
@@ -29,7 +30,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    border: 2px solid;
+    border: 1px solid;
     padding-bottom: 25px;
     padding-top: 25px;
     padding-right: 5px;

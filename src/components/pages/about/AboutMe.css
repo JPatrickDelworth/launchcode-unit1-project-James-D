@@ -51,6 +51,11 @@ body {
 
 }
 
+.title {
+    font-family: 'Noto Serif';
+    font-size: 28px;
+}
+
 #about-gap3 {
     grid-row-start: 5;
     
@@ -170,6 +175,7 @@ body {
 #submit-button {
     width: 12%;
     font-size: 24px;
+    border-radius: 6px;
 }
 
 #about-gap6 {

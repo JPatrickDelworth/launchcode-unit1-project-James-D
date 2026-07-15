@@ -13,7 +13,6 @@ p {
     display: grid;
     grid-template-rows: 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem;
     
-    
     border-color: blueviolet;
     height: fit-content;
     width: fit-content;
@@ -49,7 +48,7 @@ p {
 
 #char {
     display: grid;
-    grid-template-columns: 4fr 2fr 1fr 10fr 4fr;
+    grid-template-columns: 4fr 1fr .4fr 10fr 4fr;
     grid-row-start: 4;
     height: 55rem;
     
@@ -71,7 +70,7 @@ p {
 #char-logos {
     grid-column-start: 2;
     display: flex;
-    border: 2px solid;
+    
     flex-direction: column;
     display: flex;
     align-content:center;
@@ -81,8 +80,20 @@ p {
 }
 
 .race-button {
-    height: 8%;
-    margin: 5%;
+    height: 75px;
+    width: 85px;
+    margin-bottom: 24%;
+    border-radius: 12px;
+    font-family: "Noto Sans";
+    font-weight: 500;
+}
+
+#race-button-bottom {
+    height: 75px;
+    width: 85px;
+    border-radius: 12px;
+    font-family: "Noto Sans";
+    font-weight: 500;
 }
 
 #char-col2 {
@@ -98,13 +109,20 @@ p {
 
 #char-main {
     grid-column-start: 4;
+
     border: 2px solid;
-    
+   
+    border-radius: 12px;
+
     display: flex;
-    align-content:center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100%;
+
+    overflow: hidden;
+
 }
 
 #char-col3 {
@@ -148,19 +166,28 @@ p {
 }
 
 
-#class1 {
+#classes {
     grid-column-start: 2;
-    border: 2px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+    
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    
 }
 
 .job-button {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 85px;
+    border-radius: 12px;    
 }
 
 .char-col5 {
@@ -181,14 +208,6 @@ p {
     
     align-content: center;
     justify-content: center;
-}
-
-#class2 {
-    grid-column-start: 2;
-    border: 2px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #char-gap4 {

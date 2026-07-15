@@ -23,7 +23,7 @@ function About () {
                 </div>
                 <div id="about-gap2" />
                 <div id="title-container">
-                    <div id="title">
+                    <div className="title">
                         About Me
                     </div>
                 </div>
@@ -37,7 +37,7 @@ function About () {
                 </div>
                 <div id="about-gap4" />
                 <div id="comment-title-container">
-                    <div id="comment-title">
+                    <div className="title">
                         Visitor Reply Submission Form
 
                     </div>
@@ -59,7 +59,7 @@ function About () {
                 </div>
                 <div id="about-gap6" />
                 <div id="comment-container">
-                    <div id="comment-title">
+                    <div className="title">
                         Visitor Comments
                     </div>
                     <textarea id="comment" name="comment" rows="40" cols="300"></textarea>

@@ -1,67 +1,93 @@
-.charCard {
-    display: grid;
-    grid-template-columns: 1rem, 1rem;
-    border: 3px solid;
-    height: 100%;
+#char-card {
+    display: flex;
     width: 100%;
-    grid-template-areas:
-        "race-name . . . "
-        "background . photo photo"
-        "naming-convention . photo photo"
-        "clan1 clan2 photo photo";
+    height: 100%;
+    
+    
+    border-color: blue;
+    box-sizing: border-box;
+
+
 }
 
 #content-container {
-    grid-column-start: 1;
+   
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
-    border: 3px solid;
-    width: 60%;
-    height: 100%;
+    
+    padding: 2%;
+    
 }
 
 #race-name {
     width: 30%;
-    border: 3px solid;
+    font-family: "Noto Serif";
+    
+    text-align: center;
 }
 
 .content-orientation {
-    border: 3px solid;
+    
     text-align: left;
+    width: 100%
 }
 
 #clan-container {
+    
+    
+    text-align: center;
+    
+    width: 100%;
+
+    margin-top: auto;
+    
+}
+
+#clans {
     display: flex;
     justify-content: center;
-    align-content:end;
-    width: 70%;
-    border: 3px solid;
     
 }
 
-#clan1 {
+#clan-title {
+    font-family: "Noto Serif";
+    font-size: 22px;
+    
+    
+    
+}
+
+.clan {
     
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 3%;
     font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+ 
 }
 
-#clan2 {
-  
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 20px;
-}
-
-#naming-convention {
-    
-    border: 3px solid;
-}
 
 .photo {
-    grid-column-start: 2;
-    border: 3px solid;
+    
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 2%;
+    
+    
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
 }
 
 .info {
