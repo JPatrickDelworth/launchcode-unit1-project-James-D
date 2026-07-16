@@ -60,8 +60,8 @@ function CharNClass () {
                     <div id="classes">
                         {
                             showJobCard && (
-                                <div id="popup-overlay" onClick={() => setShowJobCard(false)}>
-                                    <div id="popup-card" onClick={(event) => event.stopPropagation()}>
+                                <div id="job-card-page-overlay" onClick={() => setShowJobCard(false)}>
+                                    <div id="job-card" onClick={(event) => event.stopPropagation()}>
                                         <JobCard job={selectedJob} />
                                     </div>
                                 </div>

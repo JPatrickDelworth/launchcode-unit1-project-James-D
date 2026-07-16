@@ -10,7 +10,7 @@ function JobCard (props) {
     return (
         <div id="jobCard">
             <div id="bg-container">
-
+                <img src={props.job.art} alt={props.job.name} />
             </div>
             <div id="job-info">
                 <h2 id="job-title">{props.job.name}</h2>

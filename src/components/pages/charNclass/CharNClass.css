@@ -197,7 +197,7 @@ p {
     border-radius: 12px;    
 }
 
-#popup-overlay {
+#job-card-page-overlay {
     position:fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
@@ -207,7 +207,7 @@ p {
     
 }
 
-#popup-card {
+#job-card {
     width: 70%;
     max-width: 900px;
     background-color: white;
@@ -219,6 +219,8 @@ p {
     line-height: 26px;
     height: 43%;
     max-height: 700px;
+    position: relative;
+    overflow: hidden;
 
     
 }

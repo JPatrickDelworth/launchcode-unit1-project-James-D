@@ -1,16 +1,16 @@
-import hyurArt from '../../assets/Playable Race Artwork/01 - Hyur.png'
+import hyurArt from '../../assets/Playable Race Artwork/01 - Hyur No BG.png'
 //import hyurMaleArt from '../../assets/Playable Race Artwork/01.1 - Hyur Male.jpg'
 //import hyurFemaleArt from '../../assets/Playable Race Artwork/01.2 - Hyur Female.jpg'
-import elezenArt from '../../assets/Playable Race Artwork/02 - Elezen.jpg'
-import roegadynArt from '../../assets/Playable Race Artwork/03 - Roegadyn.webp'
-import lalafellArt from '../../assets/Playable Race Artwork/04 - Lalafell.jpg'
-import miqoteArt from "../../assets/Playable Race Artwork/05 - Miqo'te.webp"
+import elezenArt from '../../assets/Playable Race Artwork/02 - Elezen No BG.png'
+import roegadynArt from '../../assets/Playable Race Artwork/03 - Roegadyn No BG.png'
+import lalafellArt from '../../assets/Playable Race Artwork/04 - Lalafell No BG.png'
+import miqoteArt from "../../assets/Playable Race Artwork/05 - Miqo'te No BG.png"
 //import miqoteMaleArt from "../../assets/Playable Race Artwork/05.1 - Miqo'te Male.jpg"
 //import miqoteFemaleArt from "../../assets/Playable Race Artwork/05.2 - Miqo'te Female.jpg"
 import auRaArt from '../../assets/Playable Race Artwork/06 - Au Ra.jpg'
 //import vieraFemaleArt from '../../assets/Playable Race Artwork/07.1 - Viera Female.jpg'
-import vieraMaleArt from '../../assets/Playable Race Artwork/07.2 - Male Viera.jpg'
-import hrothgarMaleArt from '../../assets/Playable Race Artwork/08.1 - Hrothgar Male.jpg'
+import vieraMaleArt from '../../assets/Playable Race Artwork/07.1 - Viera Female No BG 2.png'
+import hrothgarMaleArt from '../../assets/Playable Race Artwork/08.1 - Hrothgar Male No BG 2.png'
 //import hrothgarFemaleArt from '../../assets/Playable Race Artwork/08.2 - Female Hrothgar.jpg'
 
 // TODO: Finish adding playable race data and image data
