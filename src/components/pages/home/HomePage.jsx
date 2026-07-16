@@ -11,6 +11,8 @@ import { hook } from '../../data/overview'
 
 //TODO: Edit gameplay hook text.
 
+//TODO: Format gameplay and plot text.
+
 // TODO: more to come...
 
 function Home () {

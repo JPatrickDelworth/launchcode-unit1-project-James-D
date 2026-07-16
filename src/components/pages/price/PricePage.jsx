@@ -1,5 +1,7 @@
 import Footer from '../../layout/Footer'
 import logo from '../../../assets/logos/FFXIV Logo V3.png'
+import { useState } from 'react'
+import { dataRegions } from '../../data/datacenters'
 import './Price.css'
 
 // TODO: Create free trial vs paid sub table.
@@ -10,14 +12,12 @@ import './Price.css'
 
 // TODO: Add data to price and fees table.
 
-// TODO: Add region buttons.
-
-// TODO: Add server cards.
-
 // TODO: more to come...
 
 function Price () {
 
+    const regions = Object.values(dataRegions);
+    const [selectedRegion, setSelectedRegion] = useState(dataRegions.na);
 
     return (
         <div id="price-page">
@@ -37,11 +37,38 @@ function Price () {
                 </div>
                 <div id="price-gap4"></div>
                 <div id="region-container">
-                    <p>Region Buttons</p>
+                    <h2 id="datacenter-head">Data Centers</h2>
+                    <div id="region-button-container">
+                        {
+                            regions.map((region) => (
+                                <button className="region-button" key={region.region} onClick={() => setSelectedRegion(region)}>
+                                    {region.region}
+                                </button>
+                            ))
+                        }
+
+                    </div>
                 </div>
                 <div id="price-gap5"></div>
                 <div id="server-container">
-                    <p>Server List</p>
+                    {
+                        selectedRegion.datacenter.map((datacenter) => (
+                           <div key={datacenter.name} className="datacenter-card">
+
+                                <h2 className="datacenter-title">{datacenter.name}</h2>
+                                
+                                <div className="world-list">
+                                    {
+                                        datacenter.worlds.map ((world) => (
+                                            <p key={world} className="world-name">
+                                                {world}
+                                            </p>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        ))
+                    }  
                 </div>
                 <div id="price-gap6"></div>
             </div>

@@ -6,7 +6,7 @@ export const dataRegions = {
             {
                 name: "Aether",
                 worlds: [
-                    "Adamantoise,",
+                    "Adamantoise",
                     "Cactuar",
                     "Faerie",
                     "Gilgamesh",
