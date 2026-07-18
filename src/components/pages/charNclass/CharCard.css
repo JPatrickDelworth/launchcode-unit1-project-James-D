@@ -2,30 +2,26 @@
     display: flex;
     width: 100%;
     height: 100%;
-    
-    
     border-color: blue;
     box-sizing: border-box;
-
-
 }
 
 #content-container {
    
     display: flex;
-    flex: 1;
+    flex: 2;
     flex-direction: column;
     align-items: center;
     font-family: "Noto Sans";
     padding: 2%;
     line-height: 1.4;
+   
     
 }
 
 #race-name {
     width: 30%;
     font-family: "Noto Serif";
-    
     text-align: center;
 }
 
@@ -66,8 +62,12 @@
     margin-right: 5%;
     margin-bottom: 3%;
     font-size: 20px;
-    border-radius: 6px;
-    font-weight: 500;
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Noto Sans";
  
 }
 
@@ -79,15 +79,15 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin: 2%;
-    
+    padding: 1%;
+    padding-right: 2%;
     
 }
 
 .photo img {
     height: 100%;
     width: 100%;
-
+    
     object-fit: contain;
 }
 
