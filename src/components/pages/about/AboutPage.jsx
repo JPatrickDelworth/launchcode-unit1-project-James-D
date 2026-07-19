@@ -13,7 +13,7 @@ import './AboutMe.css'
 
 
 function About () {
-    const [comments, setComments] = useState([
+    const sampleComments = [
         {
             name: "Heironymus Bosch",
             email: "hgbosch@yesThisIsPurgatory.com",
@@ -26,20 +26,23 @@ function About () {
             comment: "Eat me, and know heartburn.",
             date: "July 18, 2026  • 10:17 PM"
         }
-    ]);
+    ]
+    
+    const [comments, setComments] = useState(() => {
+        const savedComments = localStorage.getItem("comments");
+
+        if(savedComments) {
+            return JSON.parse(savedComments);
+        }
+
+        return sampleComments
+    });
 
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         comment: ""
     })
-
-    useEffect(() => {
-        const savedComments = localStorage.getItem("comments");
-        if (savedComments) {
-            setComments(JSON.parse(savedComments));
-        }
-    }, []);
 
     useEffect(() => {
         localStorage.setItem("comments", JSON.stringify(comments));
