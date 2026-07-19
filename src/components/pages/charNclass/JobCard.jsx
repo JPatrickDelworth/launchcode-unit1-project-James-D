@@ -15,7 +15,7 @@ function JobCard (props) {
             <div id="job-info">
                 <h2 id="job-title">{props.job.name}</h2>
                 <div id="job-stats">
-                    <p className="job-points">Base: {props.job.base}</p>
+                    <p className="job-points">Class: {props.job.base}</p>
                     <p className="job-points">Weapon: {props.job.weapon}</p>
                     <p className="job-points">Position: {props.job.position}</p>
                     <p className="job-points">Expansion: {props.job.expansion}</p>
