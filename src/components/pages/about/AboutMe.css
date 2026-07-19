@@ -3,50 +3,30 @@ body {
     font-size: 22px;
 }
 
-#about-page {
-    
-    border-color: goldenrod;
-
-}
-
 #about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
     
-    border-color: blueviolet;
-    display: grid;
-    grid-template-rows: .2fr 1fr .2fr .5fr .1fr 1.7fr .5fr .3fr .07fr 2.4fr .5fr 4fr .2fr;
-}
-#about-gap1 {
-    grid-row-start: 1;
-    border-color: aqua;
 }
 
 #about-logo-container {
-    grid-row-start: 2;
-    
-    border-color: brown;
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-#about-gap2 {
-    grid-row-start: 3;
-    border-color: aqua;
-}
-
 
 #title-container {
-    grid-row-start: 4;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 28px;
-    
-    border-color: brown;
-
+    padding-bottom: 2rem;
 }
 
 .title {
@@ -55,14 +35,7 @@ body {
     font-weight: bold;
 }
 
-#about-gap3 {
-    grid-row-start: 5;
-    
-    border-color: aqua;
-}
-
 #text-container {
-    grid-row-start: 6;
     display: flex;
     align-content: center;
     align-items: center;
@@ -81,41 +54,35 @@ body {
     border-radius: 30px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
     padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#about-text {
+    font-size: 22px;;
 }
 
 #text {
     font-size: 25px;
-}
-
-#about-gap4 {
-    grid-row-start: 7;
-    
-    border-color: aqua;
+    font-family: "Noto Sans";
+    white-space: pre-line;
+    text-align: left;
 }
 
 #comment-title-container {
-    grid-row-start: 8;
     display: flex;
     align-content: center;
     align-items:end;
     justify-content: center;
     text-align: center;
     font-size: 28px;
-    border-color: brown;
-}
-
-#about-gap5 {
-    grid-row-start: 9;
-    
-    border-color: aqua;
+    padding-bottom: 2rem;
 }
 
 #form-container {
     grid-row-start: 10;
     display:flex;
     justify-content:center;
-    
-    border-color: brown;
     flex-wrap: nowrap;
 
 }
@@ -160,12 +127,6 @@ body {
     margin-left: 20px;
 }
 
-#form-gap1 {
-    
-    border-color: aqua;
-    height: 1rem;
-}
-
 #message {
     height: 50%;
     font-size: 24px;
@@ -175,12 +136,7 @@ body {
     border :none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
     resize: none;
-}
-
-#form-gap2 {
-    
-    border-color: aqua;
-    height: 1rem;
+    margin-top: 1rem;
 }
 
 #submit {
@@ -190,6 +146,7 @@ body {
     justify-content: right;
     margin: 5px;
     height: 10%;
+    margin-top: 1rem;
 }
 
 #submit-button {
@@ -202,21 +159,13 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
 }
 
-#about-gap6 {
-    grid-row-start: 11;
-    
-    border-color: aqua;
-}
-
-#comment-container {
-    grid-row-start: 12;
-    
+#comment-container {    
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-content: center;
     align-items: center;
-
+    margin-bottom: 5rem;
 }
 
 .comment-card {
@@ -258,8 +207,6 @@ body {
     
 }
 
-#about-gap7 {
-    grid-row-start: 13;
-    
-    border-color: aqua;
+.comment-text-data {
+    font-size: 22px;
 }
