@@ -41,7 +41,7 @@ p {
 
 
 #vs-container {
-    border: 1.4px solid #666;
+    box-shadow: 0 2px 6px rgba(0,0,0,.35);
     border-radius: 30px;
     width: 72%;
     display: flex;
@@ -107,7 +107,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1.4px solid #666;
+    box-shadow: 0 2px 6px rgba(0,0,0,.35);;
     border-radius: 30px;
     padding-left: 3%;
     padding-right: 3%;
@@ -116,11 +116,10 @@ p {
 }
 
 .price-card {
-    border: 1.4px solid #666;
     border-radius: 30px;
     padding: 1%;
     width: 100%;
-    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    box-shadow: 0 2px 6px rgba(0,0,0,.35);
 
 }
 
@@ -176,6 +175,9 @@ p {
     padding-bottom: 4px;
     padding-left: 10px;
     padding-right: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
     font-family: "Noto Sans";
 }
 
@@ -183,7 +185,7 @@ p {
     width: 70%;
     max-width: 900px;
     background-color: white;
-    border: 1.4px solid #302f2f;
+    box-shadow: 5px 4px 8px rgba(0,0,0, .5);
     padding: 1.5%;
     border-radius: 12px;
     margin: 2rem;
@@ -204,11 +206,12 @@ p {
 }
 
 .upgrade-card {
-    border: 1.4px solid #666;
+    
     border-radius: 10px;
     padding-left: 2rem;
     padding-right: 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    padding-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,.35);
     max-width: 800px;
     margin: 0 auto 3rem auto
     
@@ -255,15 +258,19 @@ p {
     padding-bottom: 2px;
     padding-left: 2px;
     padding-right: 2px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
     font-family: "Noto Sans";
 }
 
 .service-card {
-    border: 1.4px solid #666;
+    
     border-radius: 10px;
     padding-left: 2rem;
     padding-right: 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    padding-bottom: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,.35);
 
     margin: 0 auto 3rem auto  
 }
@@ -323,6 +330,10 @@ p {
 #region-button-container {
     display: flex;
     justify-content: center; 
+    gap: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+    border-radius: 12px;
+    width: 52%
 }
 
 .region-button {
@@ -331,7 +342,10 @@ p {
     padding-bottom: .5%;
     padding-left: 5%;
     padding-right: 5%;
-    
+    border: none;
+    background-color: white;
+    font-family: "Noto Sans";
+    border-radius: 12px;
     flex-shrink: 0;
 }
 
@@ -349,13 +363,13 @@ p {
 .datacenter-card {
     width: 300px;
     min-height: 450px;
-    border: 1px solid #666;
+    
     border-radius: 40px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    box-shadow: 0 2px 6px rgba(0,0,0,.35);
 }
 
 .datacenter-title {
