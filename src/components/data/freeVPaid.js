@@ -1,39 +1,152 @@
-// TODO: Add paid pros information
 export const subcomp = {
-    free : {
-        pros: [
-            "Can play base game up through the Shadowbringers Expansion. (A Realm Reborn, Heavensward, Stormblood, Shadowbringers)",
-            "Can play up to level 80.",
-            "Can create 8 characters in each data Center.",
-            "Can purchase (some) items from the online store for use in game.",
-            "No time limit, you simply stop leveling after hitting level 80 and can't progress after Shadowbringers.",
-            "Can join parties if invited by anothe player",
-            "Can participate in the Duty Finder (party match-making for dungeon/raid content)."
-        ],
-        cons: [
-            "Cannot play Endwalker, Dawntrail, or Evercold expansions.",
-            "Can't level to 110.",
-            "Limited to maximum of 300,000 gil.",
-            "Cannot use 'shout, 'yell', or 'tell' in-game chat options.",
-            "Cannot access the in-game market board.",
-            "Cannot trade with other players.",
-            "Cannot send in-game letters using the post moogle delivery service.",
-            "Cannot hire retainers (no item storage outside your base inventory).",
-            "Cannot create a new Linkshell or Cross-world Linkshell (custom in game chat channels).",
-            "Cannot create or join a Free Company (guild).",
-            "Cannot create a party.",
-            "Cannot participate in PVP.",
-            "Cannot play Ultimate Raids.",
-            "Cannot use community content on Lodestone (player database).",
-            "Cannot log into the official forum or companion app."
-        ]
-    },
-    paid: {
-        pros: [
-            
-        ],
-        cons: [
-            
-        ],
-    }
+    progression: [
+        {
+            feature: "Story",
+            free: "A Realm Reborn → Shadowbringers",
+            paid: "All Expansions"
+        },
+        {
+            feature: "Maximum Level",
+            free: "80",
+            paid: "110"
+        },
+        {
+            feature: "Jobs",
+            free: "Jobs up through Shadowbringers",
+            paid: "All Jobs"
+        },
+        {
+            feature: "Play Time",
+            free: "Unlimited",
+            paid: "Unlimited while subscribed"
+        }
+    ],
+    content: [
+        {
+            feature: "Dungeons",
+            free: true,
+            paid: true
+        },
+        {
+            feature: "Trials",
+            free: true,
+            paid: true
+        },
+        {
+            feature: "Extreme Trials",
+            free: true,
+            paid: true
+        }, 
+        {
+            feature: "Alliance Raids",
+            free: true,
+            paid: true
+        },
+        {
+            feature: "Normal Raids",
+            free: true,
+            paid: true
+        },
+        {
+            feature: "Savage Raids",
+            free: true,
+            paid: true
+        },
+        {
+            feature: "Ultimate Raids",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Duty Finder",
+            free: true,
+            paid: true
+        },
+        {
+            feature: "Party Finder",
+            free: true,
+            paid: true
+        },
+        {
+            feature: "PVP",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Character Limit",
+            free: "8 per data center",
+            paid: "8 - 40 per data center*"
+        }
+    ],
+    social: [
+        {
+            feature: "Chat",
+            free: ["Say", "Party"],
+            paid: ["All Chat Options"]
+        },
+        {
+            feature: "Send Mail",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Trade",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Party Creation",
+            free: "Join Only",
+            paid: "Create and Join"
+        },
+        {
+            feature: "Free Company",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Linkshell Creation",
+            free: "Join Only",
+            paid: "Create and Join"
+        }
+    ],
+    economy: [
+        {
+            feature: "Gil Cap",
+            free: "300,000",
+            paid: "999,999,999**"
+        },
+        {
+            feature: "Market Board",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Retainers",
+            free: false,
+            paid: true
+        }
+    ],
+    account: [
+        {
+            feature: "Companion App",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Forum",
+            free: false,
+            paid: true
+        },
+        {
+            feature: "Lodestone",
+            free: "Limited",
+            paid: true
+        },
+        {
+            feature: "Online Store Purchases",
+            free: "Limited",
+            paid: true
+        }
+    ]
 }

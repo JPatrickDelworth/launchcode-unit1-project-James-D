@@ -3,6 +3,7 @@ import logo from '../../../assets/logos/FFXIV Logo V3.png'
 import { useState } from 'react'
 import { dataRegions } from '../../data/datacenters'
 import { fees } from '../../data/fees'
+import { subcomp } from '../../data/freeVPaid'
 import './Price.css'
 
 // TODO: Create free trial vs paid sub table.
@@ -16,7 +17,20 @@ import './Price.css'
 // TODO: more to come...
 
 function Price () {
+    const renderValue = (value) => {
+        if(typeof value === "boolean") {
+            return value ? (
+               <span className="checkmark">✔</span> 
+            ) : (
+                <span className="x-mark">✖</span>
+            );
+        }
 
+        if(Array.isArray(value)) {
+          return value.join(", ")
+        }
+        return value;
+    }
     const regions = Object.values(dataRegions);
     const [showUpgradePopup, setShowUpgradePopup] = useState(false);
     const [selectedRegion, setSelectedRegion] = useState(dataRegions.na);
@@ -29,7 +43,34 @@ function Price () {
                     <img src={logo} id="logo" alt="Final Fantasy XIV Title Logo"/>
                 </div>
                 <div id="vs-container">
-                    <p>Vs Table</p>
+                    <h2 className="price-page-title">Free Trial vs Paid Subscription</h2>
+                    <div id="comp-card-container">
+                        {Object.entries(subcomp).map(([category, features]) => (
+                            <div className="price-card" key={category}><h3 id="category-title">{category}</h3>
+                                <div className="comparison-header">
+                                    <span>Feature</span>
+                                    <span className= "free-v-paid">Free Trial</span>
+                                    <span className= "free-v-paid">Subscription</span>
+                                </div>
+                                {
+                                    features.map((item) => (
+                                        <div className="comparison-row" key={item.feature}>
+                                            <span>{item.feature}</span>
+                                            <span className= "free-v-paid">{renderValue(item.free)}</span>
+                                            <span className="free-v-paid">{renderValue(item.paid)}</span>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        ))}
+                    </div>
+                    <div id="alignment-container">
+                        <div className="services-note-container">
+                            <p className="service-blurb">*Max depends on subscription plan</p>
+                            <p className="service-blurb">**Per character and per retainer</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="fees-container">
                     <h2 className="price-page-title"> Game Editions</h2>
@@ -126,7 +167,7 @@ function Price () {
                                 <p className="service-description">{service.description}</p>
                             </div>
                         ))}
-                        <div id="services-note-container">
+                        <div className="services-note-container">
                             <p className="service-blurb">* Free of charge if transferring to a Preferred+ World or if transferring from a Congested World to a Preferred World</p>
                             <p className="service-blurb">** Per retainer per month</p>
                             <p className="service-blurb">*** Per month</p>

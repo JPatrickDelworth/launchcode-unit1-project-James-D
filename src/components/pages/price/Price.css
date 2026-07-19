@@ -27,7 +27,6 @@ p {
 
 
 #logo-container {
-    grid-row-start: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,17 +41,67 @@ p {
 
 
 #vs-container {
-    grid-row-start: 4;
-    border: 2px solid;
-
+    border: 1.4px solid #666;
+    border-radius: 30px;
+    width: 72%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1.4%;
+  
     
 }
 
+#category-title {
+    font-family: "Noto Sans";
+    text-transform: capitalize;
+}
+
+#comp-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    font-weight: bold;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 0.5rem 0;
+   
+    font-family: "Noto Sans";
+}
+
+.checkmark {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.x-mark {
+    color: #c62828;
+    font-weight: bold;
+}
+
+.free-v-paid {
+    text-align:center;
+}
+
+#alignment-container {
+    width: 100%;
+}
+
 #fees-container {
-    grid-row-start: 6;
     width: 72%;
     display: flex;
     flex-direction: column;
@@ -243,7 +292,7 @@ p {
     white-space-collapse: preserve-breaks;
 }
 
-#services-note-container {
+.services-note-container {
     padding-top: 1%;
     text-align: right;
     
@@ -256,8 +305,6 @@ p {
 }
 
 #region-container {
-    grid-row-start: 8;
-
     width:70%;
     display: flex;
     flex-direction: column;
@@ -289,7 +336,6 @@ p {
 }
 
 #server-container {
-    grid-row-start: 10;
     display: flex;
     justify-content: center;
     align-items: flex-start;
