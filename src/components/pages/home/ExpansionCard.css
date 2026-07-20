@@ -1,0 +1,71 @@
+.expansion-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 600px;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s;
+    padding: 8px;
+    background: white;
+
+}
+
+.expansion-card.expanded {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+    margin: 4%;
+}
+
+.collapsed-logo {
+    width: 400px;
+    max-width: none;
+    height: auto;
+    transform: rotate(90deg);
+    object-fit: contain;
+    flex-shrink: 0;
+
+}
+
+.expanded-logo {
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.expansion-card:hover {
+    transform: scale(1.05);
+}
+
+.expansion-details-container {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.expansion-details {
+    font-family: Noto Sans;
+    font-size: 18px;
+    line-height: .2;
+}
+
+.expansion-overview-details {
+    font-family: "Noto Sans";
+    font-size: 18px;
+    padding-top: 0;
+}
+
+.expansion-overview-heading {
+    margin-top: 8%;
+    font-family: "Noto Sans";
+    font-size: 22px;
+    padding-top: 0;
+}

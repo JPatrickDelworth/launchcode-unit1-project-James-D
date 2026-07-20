@@ -88,17 +88,19 @@
     grid-row: 6;
     
     border-color: chartreuse;
-    height:300px;
+    height: 800px;
     display: flex;
     justify-content: center;
+    padding-bottom: .5%;
 }
 
-#img-standin {
-    border: 2px solid;
-    width: 55%;
+#personal-image {
+    border:none;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
 }
 
 #plot {
@@ -114,13 +116,12 @@
 
 #gallery {
     grid-row: 8;
-    height: 150px;
     display: flex;
     justify-content:center;
 }
 
 #gallery-container {
-    border: 2px solid;
+
     width: 65%;
     display: flex;
     justify-content: center;
@@ -136,12 +137,12 @@
 
 #expansions {
     grid-row: 10;
-    border: 2px solid;
-    
-    height: 500px;
+
+
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 2rem;
 }
 
 #home-gap5 {

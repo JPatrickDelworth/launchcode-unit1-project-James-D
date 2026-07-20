@@ -2,12 +2,13 @@ import Footer from '../../layout/Footer'
 import logo from '../../../assets/logos/FFXIV Logo V3.png'
 import './Home.css'
 import { hook } from '../../data/overview'
+import ExpansionSection from "../../pages/home/ExpansionSection"
+import plotHook from '../../../assets/hook/Hook Image.png'
+import Gallery from './Gallery'
 
 // TODO: Place big image hook.
 
 // TODO: Create image gallery.
-
-// TODO: Implement expansion cards.
 
 //TODO: Edit gameplay hook text.
 
@@ -34,7 +35,7 @@ function Home () {
                 </div>
                 <div id="home-gap3" />
                 <div id="img-hook">
-                    <div id="img-standin"><p>Plot Image</p></div>
+                    <img src={plotHook} id="personal-image"/>
                 </div>
                 <div id="plot">
                     <div className="text-container">
@@ -43,12 +44,12 @@ function Home () {
                 </div>
                 <div id="gallery">
                     <div id="gallery-container">
-                        <p>Image Gallery</p>
+                        <Gallery />
                     </div>
                 </div>
                 <div id="home-gap4" />
                 <div id="expansions">
-                    <p>Expansion Cards</p>
+                    <ExpansionSection />
                 </div>
                 <div id="home-gap5" />
             </div>

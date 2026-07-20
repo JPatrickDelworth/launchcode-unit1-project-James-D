@@ -1,0 +1,27 @@
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-row img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+}
+
+.gallery-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-btn {
+    border:none;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 26px;
+    background: white;
+}
