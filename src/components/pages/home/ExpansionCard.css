@@ -9,7 +9,7 @@
     border-radius: 12px;
     cursor: pointer;
     overflow: hidden;
-    transition: .3s;
+    transition: transform .3s;
     padding: 8px;
     background: white;
 
@@ -18,10 +18,8 @@
 .expansion-card.expanded {
     width: 400px;
     height: auto;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     padding: 2%;
     margin: 4%;
 }
@@ -33,6 +31,7 @@
     transform: rotate(90deg);
     object-fit: contain;
     flex-shrink: 0;
+    padding: 10%
 
 }
 
@@ -52,27 +51,41 @@
 }
 
 .expansion-details {
-    font-family: Noto Sans;
     font-size: 18px;
     line-height: .2;
 }
 
 .expansion-jobs {
-    font-family: Noto Sans;
     font-size: 18px;
     padding: 0;
     margin-top: .5%;
 }
 
 .expansion-overview-details {
-    font-family: "Noto Sans";
     font-size: 18px;
     padding-top: 0;
 }
 
 .expansion-overview-heading {
     margin-top: 8%;
-    font-family: "Noto Sans";
     font-size: 22px;
     padding-top: 0;
+}
+
+@media (max-width:700px){
+
+    .expansion-card{
+        width:90%;
+        height:auto;
+        min-height:220px;
+    }
+
+    .collapsed-logo{
+        width:220px;
+    }
+
+    .expanded-logo{
+        width:220px;
+    }
+
 }

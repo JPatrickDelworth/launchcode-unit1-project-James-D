@@ -1,4 +1,4 @@
-/*TODO: Change flex box to grid.*/
+
 body {
     font-size: 22px;
 }
@@ -210,3 +210,40 @@ body {
 .comment-text-data {
     font-size: 22px;
 }
+
+@media (max-width: 900px) {
+
+    #text-box,
+    .form,
+    #comments-list{
+        width:95%;
+    }
+
+    #id-form-container{
+        flex-direction:column;
+        height:auto;
+        gap:1rem;
+    }
+
+    #name,
+    #email{
+        width:100%;
+        margin:0;
+        box-sizing:border-box;
+    }
+
+    #submit{
+        justify-content:center;
+    }
+
+    #submit-button{
+        width:200px;
+    }
+
+    #text{
+        font-size:20px;
+    }
+}
+
+
+

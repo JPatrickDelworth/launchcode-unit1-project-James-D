@@ -7,7 +7,7 @@ import './ExpansionSection.css'
 
 
 function ExpansionSection () {
-    const [selectedExpansion, setSelectedExpansion] = useState(0);
+    const [selectedExpansion, setSelectedExpansion] = useState(null);
 
     return (
             <div className="expansion-section"

@@ -399,3 +399,32 @@ p {
     padding-right: 10px;
   
 }
+
+@media (max-width:900px){
+
+    #vs-container,
+    #fees-container{
+        width:95%;
+        box-sizing:border-box;
+    }
+
+    .comparison-header,
+    .comparison-row{
+        grid-template-columns:1.5fr 1fr 1fr;
+        font-size:16px;
+    }
+
+    .price-card{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:650px;
+    }
+
+    #upgrade-popup{
+        width:95%;
+        margin:1rem;
+    }
+
+}

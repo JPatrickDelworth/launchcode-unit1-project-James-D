@@ -17,6 +17,4 @@ const gallery = Object.entries(imageModules).map(([path, image], index) => ({
         .replace(/[-_]/g, " ")
 })) 
 
-console.log(gallery);
-
 export default gallery;

@@ -22,17 +22,7 @@ function App() {
       </Routes>
 
     </div>
-        
 
-  
-
-
-
-
-
-
-
-    
   )
 }
 

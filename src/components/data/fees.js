@@ -1,4 +1,3 @@
-// TODO: Organize if needed, check for accuracy, additional fees.
 export const fees = {
     subscription : [
         {

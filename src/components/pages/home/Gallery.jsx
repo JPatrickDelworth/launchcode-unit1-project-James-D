@@ -5,11 +5,11 @@ import './Gallery.css'
 
 
 function Gallery () {
-    const visibleCount = 6;
+    
     const imageWidth = 250;
     const imageGap = 15;
 
-    const windowWidth = visibleCount * imageWidth + (visibleCount - 1) * imageGap;
+    
 
 
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -34,7 +34,7 @@ function Gallery () {
             <button className="gallery-btn" onClick={previousImages} disabled={startIndex === 0}>
                 ◀
             </button>
-            <div className="gallery-window" style={{ width: `${windowWidth}px`}}>
+            <div className="gallery-window" >
                 <div className="gallery-row" style={{transform: `translateX(-${startIndex * (imageWidth + imageGap)}px)`}}>
                     {gallery.map((image, index) => (
                         <img

@@ -6,36 +6,26 @@ import ExpansionSection from "../../pages/home/ExpansionSection"
 import plotHook from '../../../assets/hook/Hook Image.png'
 import Gallery from './Gallery'
 
-// TODO: Place big image hook.
-
-// TODO: Create image gallery.
-
-//TODO: Edit gameplay hook text.
-
-//TODO: Format gameplay and plot text.
-
-// TODO: more to come...
-
 function Home () {
 
     return (
         <div id="home-page">
             <div className="home-container">
-                <div id="home-gap1" />
+                <div className="home-gap" />
                 <div id="logo-container">
 
                         <img src={logo} id="logo" alt="Final Fantasy XIV Title Logo" />
 
                 </div>
-                <div id="home-gap2" />
+                <div className="home-gap" />
                 <div id="overview">
                     <div className="text-container">
                         <p className="hook">{hook.gameplay}</p>
                     </div>
                 </div>
-                <div id="home-gap3" />
+                <div className="home-gap" />
                 <div id="img-hook">
-                    <img src={plotHook} id="personal-image"/>
+                    <img src={plotHook} id="personal-image" alt="Schelt Adalweise" />
                 </div>
                 <div id="plot">
                     <div className="text-container">
@@ -47,11 +37,11 @@ function Home () {
                         <Gallery />
                     </div>
                 </div>
-                <div id="home-gap4" />
+                <div className="home-gap" />
                 <div id="expansions">
                     <ExpansionSection />
                 </div>
-                <div id="home-gap5" />
+                <div className="home-gap" />
             </div>
             <Footer id="home-footer" />
         </div>

@@ -1,8 +1,5 @@
 #char-page {
-    
-    border-color: goldenrod;
-    height: fit-content;
-    width: fit-content;
+  width:100%
 }
 
 p {
@@ -10,58 +7,33 @@ p {
 }
 
 #char-container {
-    display: grid;
-    grid-template-rows: 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem, 1rem;
-    
-    border-color: blueviolet;
-    height: fit-content;
-    width: fit-content;
-}
-
-#char-gap1 {
-    grid-row-start: 1;
-    
-    border-color: aqua;
-    height: 2rem;
-}
-
-#logo-container {
-    grid-row-start: 2;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    flex-direction: column;
+    width: 100%;
 }
+
+
 
 #logo {
     max-height: 9rem;
-    
+    margin-bottom: 5%;
 }
 
-#char-gap2 {
-    grid-row-start: 3;
-    height: 2rem;
-    
-    border-color: aqua;
 
-}
 
 #char {
     display: grid;
     grid-template-columns: 4fr 1fr .4fr 10fr 4fr;
     grid-row-start: 4;
     height: 55rem;
-    
     gap: 2px;
     grid-template-areas:
         "char-col1 char-logos char-col2 char-main char-col3";
 }
+
 #char-col1 {
     grid-column-start: 1;
-    
-    border-color:brown;
     display: flex;
-    align-content:center;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -70,9 +42,7 @@ p {
 #char-logos {
     grid-column-start: 2;
     display: flex;
-    
     flex-direction: column;
-    display: flex;
     align-content:center;
     align-items: center;
     justify-content: center;
@@ -84,7 +54,7 @@ p {
     width: 85px;
     margin-bottom: 24%;
     border-radius: 12px;
-    font-family: "Noto Sans";
+    font-size: 14px;
     font-weight: 500;
     border: none;
     background-color: white;
@@ -101,10 +71,7 @@ p {
 
 #char-col2 {
     grid-column-start: 3;
-    
-    border-color:brown;
     display: flex;
-    align-content:center;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -112,15 +79,10 @@ p {
 
 #char-main {
     grid-column-start: 4;
-
-    
-   
     border-radius: 12px;
-
     display: flex;
     white-space: pre-line;
     text-align: justify;
-
     align-items: stretch;
     justify-content: stretch;
     height: 100%;
@@ -131,21 +93,10 @@ p {
 
 #char-col3 {
     grid-column-start: 5;
-    
-    border-color:brown;
     display: flex;
-    align-content:center;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-#char-gap3 {
-    grid-row-start: 5;
-    grid-column-start: 1;
-    height: 10rem;
-    
-    border-color: aqua;
 }
 
 .class-container{
@@ -153,18 +104,13 @@ p {
     display: grid;
     gap: 2px;
     grid-template-columns: 1fr 3.25fr 1fr;
-    
-
     align-content: center;
     justify-content: center;
 }
 
 .char-col4 {
     grid-column-start: 1;
-    
-    border-color:brown;
     display: flex;
-    align-content:center;
     align-items: center;
     justify-content: center;
 }
@@ -176,9 +122,9 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    
-    
+    margin-bottom: 10%;
+    margin-top: 5%;
+
 }
 
 #job-section-title {
@@ -191,7 +137,6 @@ p {
     justify-content: center;
     gap: 15px;
     margin-bottom: 15px;
-    
 }
 
 .job-button {
@@ -222,8 +167,7 @@ p {
     box-shadow: 5px 4px 8px rgba(0,0,0, .5);
     padding: 1.5%;
     border-radius: 12px;
-    margin: 5%;
-    margin-bottom: 20%;
+    margin: 5% 5% 20%;
     line-height: 26px;
     height: 43%;
     max-height: 700px;
@@ -234,10 +178,7 @@ p {
 
 .char-col5 {
     grid-column-start: 3;
-    
-    border-color:brown;
     display: flex;
-    align-content:center;
     align-items: center;
     justify-content: center;
 }
@@ -252,9 +193,140 @@ p {
     justify-content: center;
 }
 
-#char-gap4 {
-    grid-row-start: 8;
-    height: 10rem;
+@media (max-width: 1000px) {
+    #char {
+        grid-template-columns: 1fr 85px .5rem 6fr 1fr;
+        grid-template-areas: none;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    #char-col1
+    #char-logos
+    #char-col2
+    #char-main
+    #char-col3{
+        grid-column: auto;
+    }
+
+    .rows{
+        flex-wrap: wrap;
+    }
+
+    #job-card{
+        width:90%;
+        height: auto;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    #char-main{
+        height: auto;
+        overflow: visible;
+    }
+
+    #content-container{
+        flex: none;
+        height: auto;
+    }
+
+    .photo{
+        flex: none;
+        height: auto;
+    }
+    #char-card{
+        height: auto;
+    }
+
+    .char-gap,
+    #logo-container,
+    #char,
+    .class-container,
+    .class2-container{
+        grid-row: auto;
+    }
+
     
-    border-color: aqua;
+}
+@media (max-width: 700px) {
+    .race-button,
+    .job-button{
+            width: 65px;
+            height: 60px;
+    }
+
+    #logo{
+        max-height: 6rem;
+    }
+
+    #char{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-areas:
+            "logos"
+            "main";
+        justify-items:center;
+        gap:1rem;
+        height:auto;
+        overflow: visible;
+        margin-bottom: 3rem;
+    }
+
+    #char-col1,
+    #char-col2,
+    #char-col3{
+        display:none;
+    }
+
+    #char-logos{
+    grid-area:logos;
+    flex-direction: row;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:.75rem;
+    padding-bottom: 1rem;
+
+    width:100%;
+}
+
+    #char-main{
+        grid-area:main;
+        width: min(95%, 900px);
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .race-button{
+        margin-bottom: 0;
+    }
+
+    #content-container{
+        
+        display:flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .photo{
+        flex: none;
+        height: auto;
+    }
+
+    #char-card{
+        height: auto;
+    }
+
+    .char-gap,
+    #logo-container,
+    #char,
+    .class-container,
+    .class2-container{
+        order: 0;
+    }
+
 }

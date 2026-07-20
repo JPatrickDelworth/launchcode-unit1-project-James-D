@@ -1,8 +1,6 @@
-// CONCEPT 1
+
 import { useNavigate } from 'react-router-dom';
 import './Layout.css'
-
-// TODO: more to come...
 
 function Footer () {
     const navigate = useNavigate();
@@ -18,11 +16,3 @@ function Footer () {
 }
 
 export default Footer;
-
-
-
-/*====================================================================================================================*/
-
-// CONCEPT 2
-
-// TODO: N/A

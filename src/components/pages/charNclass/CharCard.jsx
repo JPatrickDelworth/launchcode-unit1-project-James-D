@@ -1,12 +1,4 @@
 import './CharCard.css'
-// TODO: Import global card.
-// TODO: Customize card for character layout
-
-// TODO: Populate with data
-
-// TODO: Export
-
-// TODO: more to come...
 
 
 function CharCard (props) {
@@ -24,8 +16,8 @@ function CharCard (props) {
                 <div id="clan-container">
                     <h4 id="clan-title">Clans</h4>
                     <div id="clans">
-                        <button className="clan">{props.character.sub1}</button>
-                        <button className="clan">{props.character.sub2}</button>
+                        <p className="clan">{props.character.sub1}</p>
+                        <p className="clan">{props.character.sub2}</p>
                     </div>
                 </div>
             </div>

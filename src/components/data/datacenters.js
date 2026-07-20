@@ -1,4 +1,3 @@
-// TODO: Double check info and spelling.
 export const dataRegions = {
     na : {
         region: "North America",

@@ -18,14 +18,16 @@
 
 #job-info {
     text-align: center;
-    font-family: "Noto Serif";
     position: relative;
     z-index: 1;
 }
 
+#job-title {
+    font-family: "Noto Serif";
+}
+
 #job-stats {
     text-align: left;
-    font-family: "Noto Sans";
     
 }
 
@@ -35,19 +37,11 @@
     line-height: .7;
 }
 
-#description-container {
-    justify-content: center;
-    align-items: center;
-    
-}
-
 #job-description {
     font-size: 18px;
-    font-weight: 500;
     padding-top: 2%;
-    font-family: "Noto Sans";
     font-weight: 400;
-    text-align:justify;
+    text-align: justify;
     white-space: pre-line;
     
 }

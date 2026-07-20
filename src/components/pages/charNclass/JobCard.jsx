@@ -1,10 +1,5 @@
 import './JobCard.css'
 
-//TODO: Add Animation
-//TODO: ADD Card "sliding mechanics" (like a deck with one card on top and the visitor can "flip through them") OPTIONAL
-//TODO: As an alternative to above, add Arrow buttons on witrher side of a Job card so visitors can scroill without clicking off the card if they don't want to.
-// TODO: more to come...
-
 function JobCard (props) {
 
     return (

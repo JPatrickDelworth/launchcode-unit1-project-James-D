@@ -6,16 +6,6 @@ import { fees } from '../../data/fees'
 import { subcomp } from '../../data/freeVPaid'
 import './Price.css'
 
-// TODO: Create free trial vs paid sub table.
-
-// TODO: Add data to free trial vs paid sub table.
-
-// TODO: Create price and fees table.
-
-// TODO: Add data to price and fees table.
-
-// TODO: more to come...
-
 function Price () {
     const renderValue = (value) => {
         if(typeof value === "boolean") {
@@ -143,7 +133,7 @@ function Price () {
                             <tbody>
                                 {fees.subscription.map((subscription) => (
                                     subscription.subLength.map((length, index) => (
-                                        <tr>
+                                        <tr key={subscription.name}>
                                             <td>{subscription.tier}</td>
                                             <td>{length}</td>
                                             <td>{subscription.price[index]}</td>

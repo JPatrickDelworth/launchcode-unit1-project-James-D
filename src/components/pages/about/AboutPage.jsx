@@ -4,14 +4,6 @@ import Footer from '../../layout/Footer'
 import logo from '../../../assets/logos/FFXIV Logo V3.png'
 import './AboutMe.css'
 
-// TODO: Populate "About Me" textbox with information.
-
-// TODO: Add scrollable text area for comments to be posted to.
-
-// TODO: Implement code to add comments to comment area.
-
-// TODO: more to come...
-
 
 function About () {
     const sampleComments = [

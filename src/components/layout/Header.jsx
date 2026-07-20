@@ -1,7 +1,6 @@
-// CONCEPT 1
+
 import { useNavigate } from 'react-router-dom';
 import './Layout.css'
-// TODO: more to come...
 
 function Header () {
     const navigate = useNavigate();
@@ -20,21 +19,3 @@ function Header () {
 }
 
 export default Header;
-
-
-
-/*====================================================================================================================*/
-
-// CONCEPT 2
-
-// TODO: Create vertical layout on left side of page.
-
-// TODO: Add four buttons vertically in the center of the header.
-
-// TODO: Add copyright info at the bottom center of the vertical header.
-
-// TODO: Route the buttons to the appropriate pages.
-
-// TODO: Export.
-
-// TODO: more to come...

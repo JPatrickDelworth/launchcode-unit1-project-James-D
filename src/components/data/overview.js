@@ -1,6 +1,3 @@
-// TODO: Edit gameplay hook text.
-
-
 
 export const hook = {
     gameplay: `Have you heard of the critically acclaimed MMORPG Final Fantasy XIV with an expanded free trial which 

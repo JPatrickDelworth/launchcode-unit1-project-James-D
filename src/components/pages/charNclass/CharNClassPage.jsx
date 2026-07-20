@@ -7,15 +7,6 @@ import { playableRaces } from '../../data/characters'
 import './CharNClass.css'
 import JobCard from './JobCard'
 
-// TODO: Create layout for playable race icons and info card.
-
-// TODO: Create layout for class icons.
-
-// TODO: Implement playable race icon to info pane buttons
-
-// TODO: Implement class card overlay on click
-
-// TODO: more to come...
 
 function CharNClass () {
     const [selectedRace, setSelectedRace] = useState(playableRaces[0]);
@@ -26,11 +17,11 @@ function CharNClass () {
     return (
         <div id="char-page">
             <div id="char-container">
-                <div id="char-gap1"/>
+                <div className="char-gap" />
                 <div id="logo-container">
                     <img src={logo} id="logo" alt="Final Fantasy XIV Logo" />
                 </div>
-                <div id="char-gap2"/>
+                <div className="char-gap"/>
                 <div id="char">
                     <div id="char-col1" ><p></p></div>
                     <div id="char-logos">                        
@@ -53,7 +44,7 @@ function CharNClass () {
                     </div>
                     <div id="char-col3" ><p></p></div>
                 </div>
-                <div id="char-gap3" />
+                <div className="char-gap" />
                 <div className="class-container">
             
                     <div className="char-col4"><p></p></div>
@@ -119,42 +110,11 @@ function CharNClass () {
                                     </button>
                             ))}
                             </div>
-                            
-                            
-                            {/*
-                            {
-                                jobs.mainJobs.map((job) => (
-                                    <button
-                                        key={job.name}
-                                        className='job-button'
-                                        onClick={() => setSelectedJob(job)}
-                                    >
-                                        <img
-                                            src={job.icon}
-                                            alt={job.main}
-                                        />
-                                    </button>
-                                ))
-                            }
-                            {
-                                jobs.limitedJobs.map((job) => (
-                                    <button
-                                        key={job.name}
-                                        className='job-button'
-                                        onClick={() => setSelectedJob(job)}
-                                    >
-                                        <img
-                                            src={job.icon}
-                                            alt={job.main}
-                                        />
-                                    </button>
-                                ))
-                            } */}
                     </div>
                     <div className="char-col5"><p></p></div>
                 </div>
                 
-                <div id="char-gap4" />
+                <div className="char-gap" />
 
             </div>
             <Footer id="char-footer"/>  
