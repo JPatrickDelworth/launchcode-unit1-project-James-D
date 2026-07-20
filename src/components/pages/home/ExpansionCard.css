@@ -57,6 +57,13 @@
     line-height: .2;
 }
 
+.expansion-jobs {
+    font-family: Noto Sans;
+    font-size: 18px;
+    padding: 0;
+    margin-top: .5%;
+}
+
 .expansion-overview-details {
     font-family: "Noto Sans";
     font-size: 18px;

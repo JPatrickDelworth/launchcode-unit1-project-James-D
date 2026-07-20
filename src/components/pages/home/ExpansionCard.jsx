@@ -21,7 +21,9 @@ function ExpansionCard ({ expansion, expanded, onClick}) {
 
                         <p className="expansion-details"><strong>Level Cap:</strong> {expansion.maxLvl}</p>
 
-                        <p className="expansion-details"><strong>Jobs:</strong> {expansion.addedJobs.join(", ")}</p>
+                        <div className="expansion-jobs">
+                            <p className="expansion-jobs"><strong>Jobs:</strong> {expansion.addedJobs.join(", ")}</p>
+                        </div>
                     </div>
 
                         <h3 className="expansion-overview-heading">Overview</h3>

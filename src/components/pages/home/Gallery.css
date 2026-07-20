@@ -1,14 +1,14 @@
 .gallery-row {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    transition: transform 0.4s ease;
 }
 
 .gallery-row img {
     width: 250px;
     height: 150px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
 }
 
@@ -16,12 +16,86 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 .gallery-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     border:none;
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: 26px;
-    background: white;
+    border-radius: 50%;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gallery-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.gallery-btn:hover {
+    transform: scale(1.1);
+}
+
+.gallery-window {
+    overflow: hidden;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.lightbox{
+    position: relative;
+}
+
+.lightbox img {
+    max-width: 75vw;
+    max-height: 75wh;
+    border-radius: 12px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color:white;
+    cursor: pointer;
+}
+
+
+.lightbox-arrow-left,
+.lightbox-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lightbox-arrow-left {
+    left: -70px;
+}
+
+.lightbox-arrow-right {
+    right: -70px;
 }
